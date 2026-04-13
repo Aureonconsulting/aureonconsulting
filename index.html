@@ -14,18 +14,17 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72') center/cover no-repeat;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 .hero p {
   font-size: 1.3rem;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 .hero button {
   padding: 12px 25px;
@@ -51,7 +50,6 @@ section {
 }
 h2 {
   color: #1e3a8a;
-  margin-bottom: 20px;
 }
 
 /* SERVICES */
@@ -65,32 +63,26 @@ h2 {
   border-radius: 10px;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
-  transition: 0.3s;
+  text-align: center;
 }
-.card:hover {
-  transform: translateY(-5px);
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
 }
 
-/* TRUST */
-.trust {
-  background: #f1f5f9;
-  padding: 50px;
+/* IMAGE SECTION */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.split img {
+  width: 100%;
   border-radius: 10px;
 }
-
-/* CONTACT */
-.contact input, .contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.contact button {
-  background: #1e3a8a;
-  color: white;
-  padding: 10px 20px;
-  border: none;
+.split div {
+  flex: 1;
 }
 
 /* FOOTER */
@@ -114,12 +106,17 @@ footer {
   <button class="btn-secondary">View Services</button>
 </div>
 
-<!-- ABOUT -->
-<section>
-  <h2>About Us</h2>
-  <p>
-    Aureon Consulting is a modern business and financial advisory firm helping companies make smarter decisions, improve performance, and achieve sustainable growth.
-  </p>
+<!-- ABOUT WITH IMAGE -->
+<section class="split">
+  <div>
+    <h2>About Us</h2>
+    <p>
+      Aureon Consulting is a modern business and financial advisory firm helping companies make smarter decisions, improve performance, and achieve sustainable growth.
+    </p>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd">
+  </div>
 </section>
 
 <!-- SERVICES -->
@@ -127,45 +124,41 @@ footer {
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/1e3a8a/business.png"/>
       <h3>Business Consulting</h3>
-      <p>Strategic planning and execution to drive measurable growth.</p>
+      <p>Strategic planning and execution to drive growth.</p>
     </div>
     <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/1e3a8a/combo-chart.png"/>
       <h3>Financial Planning</h3>
-      <p>Data-driven insights, forecasting, and financial modeling.</p>
+      <p>Forecasting and data-driven insights.</p>
     </div>
     <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/1e3a8a/accounting.png"/>
       <h3>Virtual CFO</h3>
-      <p>Expert financial leadership and reporting systems.</p>
+      <p>Expert financial leadership.</p>
     </div>
     <div class="card">
+      <img src="https://img.icons8.com/ios-filled/100/1e3a8a/calculator.png"/>
       <h3>Bookkeeping</h3>
-      <p>Accurate records and real-time financial visibility.</p>
+      <p>Accurate and reliable records.</p>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<section>
-  <div class="trust">
-    <h2>Why Aureon Consulting</h2>
-    <ul>
-      <li>✔ Structured, data-driven decision making</li>
-      <li>✔ Practical execution-focused solutions</li>
-      <li>✔ Deep financial and business expertise</li>
-      <li>✔ Long-term partnership approach</li>
-    </ul>
+<!-- TRUST IMAGE -->
+<section class="split">
+  <div>
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
   </div>
-</section>
-
-<!-- CONTACT -->
-<section>
-  <h2>Contact Us</h2>
-  <div class="contact">
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-    <button>Send Message</button>
+  <div>
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>✔ Data-driven decision making</li>
+      <li>✔ Practical execution focus</li>
+      <li>✔ Financial expertise</li>
+      <li>✔ Long-term partnerships</li>
+    </ul>
   </div>
 </section>
 
