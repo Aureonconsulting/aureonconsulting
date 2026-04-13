@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aureon Consulting</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
 }
 
 /* NAVBAR */
@@ -25,8 +26,8 @@ nav {
   display: flex;
   justify-content: space-between;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  z-index: 1000;
 }
+
 nav a {
   text-decoration: none;
   margin-left: 20px;
@@ -37,33 +38,35 @@ nav a {
 /* HERO */
 .hero {
   background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
-  url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f');
+  url('https://images.unsplash.com/photo-1497366216548-37526070297c');
   background-size: cover;
+  background-position: center;
   color: white;
   padding: 120px 20px;
   text-align: center;
 }
-.hero h1 {
-  font-size: 3rem;
-}
+
+.hero h1 { font-size: 3rem; }
+
 .hero p {
   font-size: 1.3rem;
   margin: 20px 0;
 }
-.hero a {
-  text-decoration: none;
-}
+
 .hero button {
-  padding: 12px 25px;
+  padding: 12px 28px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
 }
+
 .btn-primary {
   background: #3b82f6;
   color: white;
 }
+
 .btn-secondary {
   background: white;
   color: #1e3a8a;
@@ -75,9 +78,8 @@ section {
   max-width: 1100px;
   margin: auto;
 }
-h2 {
-  color: #1e3a8a;
-}
+
+h2 { color: #1e3a8a; }
 
 /* SPLIT */
 .split {
@@ -86,13 +88,13 @@ h2 {
   gap: 30px;
   align-items: center;
 }
+
 .split img {
   width: 100%;
   border-radius: 10px;
 }
-.split div {
-  flex: 1;
-}
+
+.split div { flex: 1; }
 
 /* SERVICES */
 .services {
@@ -100,17 +102,18 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
+
 .card {
   padding: 25px;
   border-radius: 10px;
-  background: #f8fafc;
+  background: white;
   border: 1px solid #e5e7eb;
   text-align: center;
   transition: 0.3s;
 }
-.card:hover {
-  transform: translateY(-5px);
-}
+
+.card:hover { transform: translateY(-5px); }
+
 .card img {
   width: 50px;
   margin-bottom: 15px;
@@ -118,10 +121,11 @@ h2 {
 
 /* CONTACT */
 .contact-box {
-  background: #f1f5f9;
+  background: white;
   padding: 40px;
   border-radius: 10px;
 }
+
 .contact input, .contact textarea {
   width: 100%;
   padding: 10px;
@@ -129,6 +133,7 @@ h2 {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
 .contact button {
   background: #1e3a8a;
   color: white;
@@ -150,7 +155,9 @@ footer {
 
 <!-- NAVBAR -->
 <nav>
-  <strong>Aureon Consulting</strong>
+  <div style="font-weight:600; font-size:20px; color:#1e3a8a;">
+    Aureon<span style="color:#3b82f6;">.</span>
+  </div>
   <div>
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -162,8 +169,6 @@ footer {
 <div class="hero">
   <h1>Aureon Consulting</h1>
   <p>Helping businesses scale with clarity, control, and financial insight</p>
-
-  <!-- WORKING BUTTONS -->
   <a href="#contact"><button class="btn-primary">Book a Consultation</button></a>
   <a href="#services"><button class="btn-secondary">View Services</button></a>
 </div>
@@ -177,7 +182,7 @@ footer {
     </p>
   </div>
   <div>
-    <img src="https://images.unsplash.com/photo-1581091215367-59ab6b9fbd1b">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
   </div>
 </section>
 
@@ -193,25 +198,25 @@ footer {
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/1e3a8a/combo-chart.png"/>
       <h3>Financial Planning</h3>
-      <p>Forecasting, modeling, and insights.</p>
+      <p>Forecasting and insights.</p>
     </div>
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/1e3a8a/accounting.png"/>
       <h3>Virtual CFO</h3>
-      <p>Financial leadership and reporting.</p>
+      <p>Financial leadership.</p>
     </div>
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/1e3a8a/calculator.png"/>
       <h3>Bookkeeping</h3>
-      <p>Accurate financial records.</p>
+      <p>Accurate records.</p>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
+<!-- WHY CHOOSE US (FIXED WITH IMAGE) -->
 <section class="split">
   <div>
-    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
   </div>
   <div>
     <h2>Why Choose Us</h2>
