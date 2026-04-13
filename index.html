@@ -229,17 +229,22 @@ footer {
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <h2>Contact Us</h2>
-  <div class="contact-box contact">
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-   <a href="mailto:info@aureonconsulting.in">
-  <button>Send Message</button>
-</a>
-  </div>
+
+  <form action="https://formsubmit.co/info@aureonconsulting.in" method="POST" class="contact-box contact">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Send Message</button>
+
+  </form>
 </section>
 
 <footer>
