@@ -4,45 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aureon Consulting</title>
+
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
   color: #1a1a1a;
 }
-header {
-  background: #0f172a;
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: white;
-  padding: 60px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
-header h1 {
-  font-size: 2.5rem;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
-header p {
-  font-size: 1.2rem;
-  color: #cbd5f5;
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
+.hero button {
+  padding: 12px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+.btn-secondary {
+  background: white;
+  color: #1e3a8a;
+}
+
+/* SECTIONS */
 section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 h2 {
   color: #1e3a8a;
+  margin-bottom: 20px;
 }
+
+/* SERVICES */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 .card {
-  border: 1px solid #e5e7eb;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
 }
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TRUST */
+.trust {
+  background: #f1f5f9;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+/* FOOTER */
 footer {
   background: #0f172a;
   color: white;
@@ -50,37 +101,42 @@ footer {
   padding: 20px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>Aureon Consulting</h1>
-  <p>Clarity-driven growth for modern businesses</p>
-</header>
+  <p>Helping businesses scale with clarity, control, and financial insight</p>
+  <button class="btn-primary">Book a Consultation</button>
+  <button class="btn-secondary">View Services</button>
+</div>
 
+<!-- ABOUT -->
 <section>
   <h2>About Us</h2>
   <p>
-    Aureon Consulting is a modern business and financial advisory firm helping companies
-    make smarter decisions, improve performance, and achieve sustainable growth.
+    Aureon Consulting is a modern business and financial advisory firm helping companies make smarter decisions, improve performance, and achieve sustainable growth.
   </p>
 </section>
 
+<!-- SERVICES -->
 <section>
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
       <h3>Business Consulting</h3>
-      <p>Strategic planning and execution support for growth.</p>
+      <p>Strategic planning and execution to drive measurable growth.</p>
     </div>
     <div class="card">
       <h3>Financial Planning</h3>
-      <p>Data-driven insights and financial modeling.</p>
+      <p>Data-driven insights, forecasting, and financial modeling.</p>
     </div>
     <div class="card">
       <h3>Virtual CFO</h3>
-      <p>Management reporting and financial leadership.</p>
+      <p>Expert financial leadership and reporting systems.</p>
     </div>
     <div class="card">
       <h3>Bookkeeping</h3>
@@ -89,25 +145,28 @@ footer {
   </div>
 </section>
 
+<!-- TRUST -->
 <section>
-  <h2>Our Approach</h2>
-  <ul>
-    <li>Structured problem-solving</li>
-    <li>Data-driven decisions</li>
-    <li>Execution-focused strategies</li>
-    <li>Long-term partnerships</li>
-  </ul>
+  <div class="trust">
+    <h2>Why Aureon Consulting</h2>
+    <ul>
+      <li>✔ Structured, data-driven decision making</li>
+      <li>✔ Practical execution-focused solutions</li>
+      <li>✔ Deep financial and business expertise</li>
+      <li>✔ Long-term partnership approach</li>
+    </ul>
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section>
-  <h2>Mission & Vision</h2>
-  <p><strong>Mission:</strong> Turn strategy into measurable financial growth.</p>
-  <p><strong>Vision:</strong> Become a trusted global consulting partner.</p>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: contact@aureonconsulting.in</p>
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </div>
 </section>
 
 <footer>
